@@ -10,5 +10,10 @@ dependencies = [
     "matplotlib>=3.10.5",
     "microfs>=1.4.5",
     "numpy>=2.3.2",
+    "panda>=0.3.1",
+    "pandas>=2.3.3",
+    "pyfiglet>=1.0.4",
+    "requests>=2.32.5",
+    "seaborn>=0.13.2",
     "uflash>=2.0.0",
 ]
