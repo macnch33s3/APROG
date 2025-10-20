@@ -7,6 +7,8 @@ from pathlib import Path
 df = pd.read_csv('C:\Users\marck\Documents\_OST\APROG\open_datasg\ladestationen-fur-elektroautos-im-kanton-stgallen.csv')
 print(df)
 
+#test for rici
+
 #print("current working dir:", Path.cwd())
 #print("CSV path:", csv_path)
 #print("Exists:", csv_path.exists())
