@@ -1,20 +1,22 @@
-#import seaborn as sns
+# import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-# csv_path = Path("C:\\Users\\marck\\OneDrive - OST\\OST RJ\\WING\\WING - 5 Semester\\APROG\\APROG\\PROJECT\\ladestationen-fur-elektroautos-im-kanton-stgallen.csv")
-df = pd.read_csv('C:\Users\marck\Documents\_OST\APROG\open_datasg\ladestationen-fur-elektroautos-im-kanton-stgallen.csv')
-print(df)
+#      https://github.com/macnch33s3/APROG/tree/main/PROJECT
+url = 'https://raw.githubusercontent.com/macnch33s3/APROG/refs/heads/main/PROJECT/ladestationen-fur-elektroautos-im-kanton-stgallen.csv'
+# df = pd.read_csv(url, index_col=0)
+df = pd.read_csv(url, sep=';', usecols=lambda x: not x.startswith("Spalte"))
+# small_df = print(df.head(5))
 
-#test for rici
+# Info/erste 5 Zeilen/
+print("Info:")
+df.info()
+print("\n Überprüfen des Datensatzes auf fehlende Werte:")
+print(df.isnull().sum())
+print("\n Anzahl der NaN-Werte im Datensatz:")
+print(df.isnull().sum().sum())
 
-#print("current working dir:", Path.cwd())
-#print("CSV path:", csv_path)
-#print("Exists:", csv_path.exists())
-
-#if not csv_path.exists():
-#    raise FileNotFoundError(f"CSV not found!")
-#
-#df = pd.read_csv(csv_path)
-#print(df.head(3))
+# adress = small_df.["address_city"]
+# print(df['adress_city'].to_string(index=False))
+# print(adress)
