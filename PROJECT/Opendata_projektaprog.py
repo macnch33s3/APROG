@@ -9,7 +9,8 @@ url = 'https://raw.githubusercontent.com/macnch33s3/APROG/refs/heads/main/PROJEC
 df = pd.read_csv(url, sep=';', usecols=lambda x: not x.startswith("Spalte"))
 # small_df = print(df.head(5))
 
-# Info/erste 5 Zeilen/
+# Dataframe als df hineinladen
+display(df.head(5))
 print("Info:")
 df.info()
 print("\n Überprüfen des Datensatzes auf fehlende Werte:")
