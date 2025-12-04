@@ -67,4 +67,5 @@ uv sync
 **Lizenz & Kontakt**
 ----------------
 - Lizenz: MIT
+  Alle files die der Hochschule gehören wurden aus Lizenzgründen nicht veröffentlicht.
 - Bei Fragen: @macnch33s3 oder ein Issue im Repo öffnen.
